@@ -1,0 +1,357 @@
+/*unverisal selecter which changes the the style of everything on the page*/
+* {
+  /*changes the font of all text on the page to be the same "Lato"*/
+  font-family: 'Lato', sans-serif;
+  /*removed the margin of all the elements which caused them to squish together and become flushed with the left side of the page*/
+  margin: 0;
+  /*removed the padding of all the elements on the page*/
+  padding: 0;
+}
+
+/*selects the tags with hr*/
+hr {
+  /*added a horizontal orange border line below the last paragraph and above the first one*/
+  border: 1px solid #c79852;
+  /*added a margin which created space between the header and the paragraphs and the paragraphs and the footers*/
+  margin: 3% auto;
+  /*caused the line to shrink to a small line in the center instead of running across the whole page*/
+  width: 7%;
+}
+
+/*selects the nav tag to modify in CSS*/
+nav {
+  /*added a bit of margin to the nav bar so that its not flushed against the left side of the page*/
+  margin: 0 1%;
+  /*added more space between the left side of the page and the nav bar and a little space between the top of the page*/
+  padding: 1% 5%;
+}
+
+/**/
+nav > div {
+  /*allowed for the nav elements to line up next to each other horizontally instead of vertically*/
+  display: inline-block;
+}
+
+/**/
+nav > div > a {
+  /*changed the color of the text to a grayish color instead of blue*/
+  color: #464646;
+  /*changed the text size found in the anchor tag*/
+  font-size: 16px;
+  /*bolded the text in the inchor tag which is in the navigation bar*/
+  font-weight: bold;
+  /*removes the underline fron the text in the navigation bar from the anchor tag*/
+  text-decoration: none;
+}
+
+/*selects the last child in the div in the nav tag*/
+nav > div:last-child {
+  /*floated the search bar to the top right of the page*/
+  float: right;
+}
+
+/*selects the input tag found in the nav tag*/
+nav input {
+  /*removes the border around the search box*/
+  border: none;
+}
+
+/*selects the section tag to modify it in CSS*/
+section {
+  /*added padding to the bottom section of the section tag*/
+  padding-bottom: 50px;
+}
+
+/*selects the header tag to custimize in CSS*/
+header {
+  /*centers the element in the center of the page*/
+  margin: 0 auto;
+  /*aligns the text in the center of the page*/
+  text-align: center;
+  /*reduces the size of the actual element in order to be able to be center*/
+  width: 80%;
+}
+
+/*selcts the image tag in the header*/
+header img {
+  /*changes the radius of the image to become a circle instead of a rectangle*/
+  border-radius: 50%;
+  /*makes the image taller*/
+  height: 75px;
+  /*makes the width bigger so that it becomes a circle again*/
+  width: 75px;
+}
+
+/*selcts h1 elements in header*/
+header h1 {
+  /*changes the color of the header*/
+  color: #242424;
+  /*changed the style the text was in*/
+  font-family: 'Lora', serif;
+  /*changed the size of the text which made it bigger*/
+  font-size: 60px;
+  /*decreased the spacing between the letters*/
+  letter-spacing: -1px;
+  /*incresed the overall line height oof the header*/
+  line-height: 60px;
+  /*gave 1% margin to the top/bottom and zero to the sides*/
+  margin: 1% 0;
+}
+
+/*selects the h2 elements in the header tag*/
+header h2 {
+  /*changed the color*/
+  color: #5f5f5f5f;
+  /*changed font size*/
+  font-size: 20px;
+  /*set the font weight to normal*/
+  font-weight: normal;
+  /*gave 5% to top 0 to sides and 3% to the bottom*/
+  margin: 5% 0 3%;
+}
+
+/*selcts p elements in header*/
+header p {
+  /*changed the font sizes*/
+  font-size: 16px;
+  /*added 3% margin to top/bottom and o to the sides*/
+  margin: 3% 0;
+}
+
+/*selects the div inside the section*/
+section > div {
+  /*centers the section*/
+  margin: 0 auto;
+  /*centers the text*/
+  text-align: center;
+  /*limits the width of the block element so that it can be centered*/
+  width: 80%;
+}
+
+/*p tag in the div inside the section tag*/
+section > div p {
+  /*changes the color to a grey instead of black*/
+  color: #565656;
+  /*changes the font size of the paragraphs in the page*/
+  font-size: 16px;
+  /*gives height and space in between the lines of text*/
+  line-height: 30px;
+  /*adds padding to the sides but none top/bottom*/
+  padding: 0 15px;
+  /*adds 3% margin to the top and bottom but none to the sides*/
+  margin: 3% 0;
+  /*aligns all the text to the left*/
+  text-align: left;
+}
+
+/*selects the class of personal quote to custimize in CSS*/
+.personal-quote {
+  /*changes the font family*/
+  font-family: 'Petit Formal Script', cursive;
+  /*adds font weight to the text*/
+  font-weight: 700;
+  /*changes font size of the quote*/
+  font-size: 24px;
+  /*adds some space between the lines of text*/
+  line-height: 36px;
+  /*no margin on top/bottom*/
+  margin: 0 auto;
+  /*aligns the text in the center*/
+  text-align: center;
+  /*reduces the width of block element to 60%*/
+  width: 60%;
+}
+
+/*selects the class of img-wrap*/
+.img-wrap {
+  /*adds height to the element*/
+  height: 450px;
+}
+
+/*selects the img tag inside of img-wrap*/
+.img-wrap img {
+  /*floats the img to the left*/
+  float: left;
+}
+
+/*selects the first child within the img tag*/
+.img-wrap img:first-child {
+  /*adds 9% margin to the left side of the element*/
+  margin-left: 9%;
+}
+
+/**/
+.img-wrap img:nth-child(n+2) {
+  /*adds 7px of margin to the left side of the element*/
+  margin-left: 7px;
+}
+
+/*selects the last child in the img tag*/
+.img-wrap img:last-child {
+  /*adds margin to the top*/
+  margin-top: 7px;
+}
+
+/*selects the footer tag inside the section*/
+section > footer {
+  /*0 margin on top/bottom*/
+  margin: 0 auto;
+  /*centers the text on the footer*/
+  text-align: center;
+  /*decreases the width to 60%*/
+  width: 60%;
+}
+
+/*selects the div inside the footer which is inside the section*/
+section > footer > div {
+  /*changes the color*/
+  color: #565656;
+}
+
+/*selects the .fa-heart class in footer*/
+footer .fa-heart {
+  /*changes the color*/
+  color: #E04F4A;
+  /*adds margin to the bottom*/
+  margin-bottom: 3%
+}
+
+/*chooses the textarea inside the footer*/
+footer textarea {
+  /*changes the background color*/
+  background-color: #fff;
+  /*no background image*/
+  background-image: none;
+  /*changes the property of the border*/
+  border: 1px solid #ccc;
+  /*changes the border color*/
+  border-color: #e5e5e5;
+  /*changes the border radius so the corner aren't so sharp*/
+  border-radius: 4px;
+  /*changes the bow properties*/
+  box-shadow: inset 0 1px 1px rbga(0,0,0,.075);
+  /*changes the color*/
+  color: #555;
+  /*changes the font size of the text inside the box*/
+  font-size: 14px;
+  /*sets the line height property*/
+  line-height: 1.42857143;
+  /*adds padding*/
+  padding: 6px 12px;
+  /*changes the width so that it taks the width of the page*/
+  width: 100%;
+}
+
+/**/
+.button-group {
+  /*aligns the text of the button group class*/
+  text-align: left;
+}
+
+/*selects the buttons in the button group class*/
+.button-group button {
+  /*takes away the border of the buttons*/
+  border: none;
+  /*sets the background color to white*/
+  background: white;
+  /*changes the color of the button*/
+  color: #565656;
+  /*changes font size*/
+  font-size: 12px;
+  /*adds 5px padding to the right side of the button*/
+  padding: 0 5px 0 0;
+}
+
+/*selects the last child in the button tag*/
+.button-group button:last-child{
+  /*floats to the right*/
+  float: right;
+  /*takes away the padding*/
+  padding: 0;
+}
+
+/*selects changing the attributes when the buttons are hovered over*/
+.button-group button:hover {
+  /*changes the color*/
+  color: #5e5e5e;
+  /*changes the cursor when hovered over the buttons*/
+  cursor: pointer;
+  /*a transition element to the buttons*/
+  transition: 0.3s all ease-in-out;
+}
+
+/*selects the footer in the body*/
+body > footer {
+  /*changes the background color*/
+  background: #f8f9fd;
+  /*increases the height*/
+  height: 200px;
+  /*adds padding to the sides*/
+  padding: 0 20%;
+  /*changes the property of the element to relative*/
+  position: relative;
+}
+
+/*selects the classes of previous and next article*/
+.previous-article, .next-article {
+  /*changes the propery to inline-block*/
+  display: inline-block;
+  /*changes it to a relative element*/
+  position: relative;
+  /*changes the width to 50% of what it was*/
+  width: 50%;
+}
+
+/*selects the previous article class*/
+.previous-article {
+  /**/
+  left: 20%;
+  /*changes the position to absolute*/
+  position: absolute;
+}
+
+/*selects the class of previous button*/
+.previous-button {
+  /*aligns the text to the left*/
+  text-align: left;
+}
+
+/*selects the next-aticle class*/
+.next-article {
+  /*sets the position of it to absolute*/
+  position: absolute;
+  /**/
+  right: 20%;
+}
+
+/*selects the next button class*/
+.next-button {
+  /*aligns the text to the right*/
+  text-align: right;
+}
+
+/*selects the previous and next button class*/
+.previous-button, .next-button {
+  /*adds 10% to the top/button*/
+  margin: 10% 0;
+}
+
+/*selects anchor tag on next and previous button*/
+.previous-button a, .next-button a {
+  /*changes the color*/
+  color: #434345;
+  /*makes the text bold*/
+  font-weight: bold;
+  /*sets 3% margin on top/bottom*/
+  margin: 3% 0;
+  /*removes the underline from the anchor tags*/
+  text-decoration: none;
+}
+
+/*selects p tag in those 2 classes*/
+.previous-button p, .next-button p {
+  /*changes the font weight to normal thickness*/
+  font-weight: normal;
+  /*adds 3% to the top/button*/
+  margin: 3% 0;
+}
